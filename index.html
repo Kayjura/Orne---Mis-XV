@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MIS XV ORNE</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- MÚSICA -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PANTALLA INICIAL -->
+<section id="welcome-screen">
+
+    <div class="overlay">
+
+        <h1 class="hero-title">MIS XV ORNE</h1>
+
+        <p class="hero-text">
+            SE VIENE UN DÍA MUY ESPECIAL Y QUIERO QUE ME ACOMPAÑES
+        </p>
+
+        <button class="main-button" onclick="abrirInvitacion()">
+            ✨ ABRIR INVITACIÓN
+        </button>
+
+    </div>
+
+</section>
+
+<!-- CONTENIDO -->
+<main id="invitation-content">
+
+    <button id="music-btn" onclick="toggleMusic()">
+        🔊
+    </button>
+
+    <section class="card fade">
+
+        <div class="photo-gallery"><img src="foto1.jpg"><img src="foto2.jpg"><img src="foto3.jpg"></div>
+
+        <h2>⏳ Faltan</h2>
+
+        <div id="countdown" class="countdown"></div>
+
+    </section>
+
+    <section class="card fade">
+
+        <h2>📅 Fecha</h2>
+
+        <p>22 DE AGOSTO 2026</p>
+
+        <p>| 21:30 A 5:30 HS |</p>
+
+    </section>
+
+    <section class="card fade">
+
+        <h2>📍 Lugar</h2>
+
+        <p>JANO'S CABALLITO SALÓN 2</p>
+
+        <iframe
+            class="map"
+            src="https://www.google.com/maps?q=Janos%20Caballito&output=embed">
+        </iframe>
+
+    </section>
+
+    <section class="card fade">
+
+        <div class="photo-gallery"><img src="foto4.jpg"><img src="foto5.jpg"><img src="foto6.jpg"></div>
+
+        <h2>👗 Dress Code</h2>
+
+        <p>Elegante Sport - Evitar Bordó y Blanco</p>
+
+    </section>
+
+    <section class="card fade">
+
+        <h2>🎁 Regalo</h2>
+
+        <p>
+            TU PRESENCIA ES LO MÁS IMPORTANTE,
+            PERO SI QUERÉS HACERME UN PRESENTE
+            PODÉS TRANSFERIR A LA SIGUIENTE CUENTA:
+        </p>
+
+        <br>
+
+        <p>
+            Leandro Ariel Randazzo<br>
+            CUIL/CUIT: 24-25189062-1<br>
+            CBU: 0290063610000541891261<br>
+            ALIAS: POTE.MARMOL.PUERTO<br>
+            Banco Ciudad
+        </p>
+
+        <button class="secondary-button" onclick="copiarDatos()">
+            Copiar datos
+        </button>
+
+    </section>
+
+    <section class="card fade">
+
+        <div class="photo-gallery"><img src="foto7.jpg"><img src="foto8.jpg"><img src="foto9.jpg"></div>
+
+        <h2>📱 Confirmar asistencia</h2>
+
+        <a
+            href="https://wa.me/5491159028453?text=Hola%20Orne,%20confirmo%20mi%20asistencia%20a%20tus%20XV%20❤️"
+            target="_blank">
+
+            <button class="secondary-button">
+                Confirmar por WhatsApp
+            </button>
+
+        </a>
+
+    </section>
+
+    <footer>
+
+        MIS XV ORNE · 22/08/2026
+
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
